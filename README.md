@@ -5,6 +5,9 @@ This project implements a Long Short-Term Memory (LSTM) model to classify toxic 
 ## Introduction
 The primary goal of this project is to develop a deep learning-based model capable of identifying toxic comments from user-generated content. The model classifies comments into six categories: toxic, severe toxic, obscene, threat, insult, and identity hate. LSTM was chosen for its ability to retain long-term dependencies in sequential data, which is crucial for accurate classification in natural language processing tasks.
 
+## Dataset
+https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
+
 ## Model Overview and Architecture
 
 The LSTM model addresses the limitations of conventional Recurrent Neural Networks (RNNs) by preserving long-range dependencies in sequential input, such as text data. LSTM models are widely used for tasks like speech recognition, time-series prediction, and natural language processing.
@@ -58,4 +61,3 @@ The dataset contains 159,751 comments, with six binary labels for each class. Th
 - Model training was conducted using Google Colab Pro and HPC lab systems to handle the large dataset.
 - Batch size was reduced to 32 for efficient training on large datasets.
 - The final model achieved significant improvement by calculating individual accuracies for each class, allowing a better evaluation of the model's performance.
-
